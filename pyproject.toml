@@ -23,15 +23,16 @@ dependencies = [
     "matplotlib",
     "seaborn",
     "scipy",
+     "your",
     "sigpyproc",
 ]
 
 [project.scripts]
-raftaar = "ra_one.Raftaar:main"
-ra-one = "ra_one.Ra_one:main"
-g-one = "ra_one.G_one:main"
-ra-completeness-plotter = "ra_one.plot_combined_completeness:main"
-ra-completeness-analyser = "ra_one.completeness_analyser:main"
-ra-sp2csv = "ra_one.singlepulsetocsv:main"
-ra-filter-sp = "ra_one.filter_sp_by_results:main"
-ra-converter = "ra_one.converter:main"
+raftaar = "Raftaar:main"
+ra-one = "Ra_one:main"
+g-one = "G_one:main"
+ra-completeness-plotter = "plot_combined_completeness:main"
+ra-completeness-analyser = "completeness_analyser:main"
+ra-sp2csv = "singlepulsetocsv:main"
+ra-filter-sp = "filter_sp_by_results:main"
+ra-converter = "converter:main"
