@@ -2,7 +2,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import copy
-from .simulator import generate_dispersed_gaussian_pulse, _dedisperse_array
+from simulator import generate_dispersed_gaussian_pulse, _dedisperse_array
 import your
 from scipy.ndimage import shift
 from matplotlib.backends.backend_pdf import PdfPages
