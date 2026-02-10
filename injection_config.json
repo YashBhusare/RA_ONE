@@ -1,0 +1,54 @@
+{
+  "dm": {
+    "mode": "fixed",
+    "value": 100,
+    "lower": 10,
+    "upper": 800,
+    "distribution": "uniform",
+    "description": "Dispersion Measure in pc/cm^3 - use mode='fixed' for constant value or mode='variable' for random range"
+  },
+  "width": {
+    "mode": "array",
+    "values": [2.0,2.001],
+    "lower": 1,
+    "upper": 10,
+    "distribution": "uniform",
+    "description": "Pulse width in ms. Use mode='array' to select from 'values', or mode='uniform' to sample between 'lower' and 'upper'."
+  },
+  "bandwidth": {
+    "mode": "broadband",
+    "lower": 756,
+    "upper": 1024,
+    "distribution": "uniform",
+    "description": "Set mode='narrowband' to sample between lower/upper, mode='broadband' to span full band"
+  },
+  "central_frequency": {
+    "lower_offset": 20,
+    "upper_offset": 20,
+    "distribution": "uniform",
+    "description": "Central frequency with offset from channel edges (actual range: lower_offset to nchan-upper_offset)"
+  },
+  "snr": {
+    "lower": 25,
+    "upper": 5,
+    "distribution": "power_law",
+    "power_law_slope": -1.0,
+    "description": "Target Signal-to-Noise Ratio (SNR). For power-law, 'lower' is max SNR and 'upper' is min SNR."
+  },
+  "scattering_measure": {
+    "mode": "fixed",
+    "value": 0.01,
+    "lower": 0.01,
+    "upper": 1.0,
+    "distribution": "uniform",
+    "description": "Scattering measure - use mode='fixed' for constant value or mode='variable' for random range"
+  },
+  "spectral_index": {
+    "value": 0,
+    "description": "Spectral index (fixed value)"
+  },
+  "time_spacing": {
+    "initial_time": 15,
+    "description": "Initial time offset in seconds for first injection"
+  }
+}

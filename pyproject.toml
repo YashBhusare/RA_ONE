@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ra-one-analysis"
+version = "0.1.0"
+authors = [
+    { name="Yash Bhusare", email="23yashbhusare@gmail.com" },
+]
+description = "A toolkit for radio burst injection and recovery analysis."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Astronomy",
+]
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "seaborn",
+    "scipy",
+    "sigpyproc",
+]
+
+[project.scripts]
+raftaar = "ra_one.Raftaar:main"
+ra-one = "ra_one.Ra_one:main"
+g-one = "ra_one.G_one:main"
+ra-completeness-plotter = "ra_one.plot_combined_completeness:main"
+ra-completeness-analyser = "ra_one.completeness_analyser:main"
+ra-sp2csv = "ra_one.singlepulsetocsv:main"
+ra-filter-sp = "ra_one.filter_sp_by_results:main"
+ra-converter = "ra_one.converter:main"
