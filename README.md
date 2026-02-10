@@ -103,5 +103,3 @@ python Ra_one.py --filepath /path/to/input.fil --config injection_config.json --
 - `plot_combined_completeness.py` and `completeness_analyser.py` help combine and visualise results across runs.
 
 ---
-
-If you want I can also add a concise example command showing a minimal end-to-end run, or add a `Dockerfile` for reproducible builds. Which would you prefer?
